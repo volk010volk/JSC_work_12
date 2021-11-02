@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n; 
+        // var str = "";
+
+        // n = +prompt("Задача 1.\nВведите число для FizzBuzz:");
+        // function FizzBuzz (givenN){
+        // let str = "";
+        //     for (i = 1; i <= givenN; i++)
+        //         if (i % 3 == 0 && i % 5 == 0)
+        //             str += "FizzBuzz" + " ";
+        //         else 
+        //             if (i % 3 == 0)
+        //                 str += "Fizz" + " ";
+        //             else
+        //                 if (i % 5 == 0)
+        //                     str += "Buzz" + " ";
+        //                 else
+        //                     str += i + " ";
+        //     alert (str);
+        // }
+        // FizzBuzz(n);
+
+        // str = "";
+        // n = +prompt("Задача 2.\nВведите высоту треугольника:");
+        // function triangilo(givenN){
+        //     let str = "";
+        //     let lvl = "";
+        //     for (i = 0; i < givenN; i++){
+        //         lvl += "#";
+        //         str += lvl + "\n";
+        //     }
+        //     alert(str);
+        // }
+        // triangilo(n);
+
+        // n = +prompt("Задача 3.\nВведите число N:");
+        // var arr = [];
+        // var sum = 0;
+        // for (i = 0; i < n; i++){
+        //     let m = +prompt("Введите " + (i + 1) + " число");
+        //     arr[i] = m;
+        //     sum += arr[i];
+        // }
+        // var max = arr[0], min = arr[0];
+        // for (i = 0; i < arr.length; i++){
+        //     if (max > arr[i])
+        //         max = arr[i];
+        //     if (min < arr[i])
+        //         min = arr[i];
+        // }
+        // alert("Максимальное значение = " + max + "\nМинимальное значение = " + min + "\nСреднее значение = " + sum/n);
+
+        // var sentenes = prompt("Задача 4.\nВведите предложение для проверки на полиндром:");
+        // function polindrom(givenStr){
+        //     let signs = "!№%:?*()_-=\" ";
+        //     for (i = 0; i < signs.length; i++)
+        //         givenStr = givenStr.split(signs[i]).join("");
+        //     givenStr = givenStr.toLowerCase();
+        //     for (i = 0; i < givenStr.length / 2; i++)
+        //         if (givenStr[i] != givenStr[givenStr.length - i -1])
+        //             return false;
+        //     return true;
+        // }
+        // if (polindrom(sentenes))
+        //     alert("Это полиндром");
+        // else
+        //     alert("Это не полиндром.");
+
+            var myString = prompt("Задача 5.\nВведите строку для отображения на странице:");
+            var cssStyles = [
+                textColor = {
+                    Name: "color",
+                    Value: "Rred"
+                },
+                textAllgn = {
+                    Name: "text-align",
+                    Value: "center"
+                },
+                textUnderline = {
+                    Name: "text-decoration",
+                    Value: "underline"
+                }
+            ];
+
+            function editText(cssArr, givenStr){
+                document.write("<p style \"");
+                for (i = 0; i < cssArr.length; i++)
+                    document.write(cssArr[i].Name + ":" + cssArr[i].Value + ";");
+                document.write("\">" + givenStr + "</p>");
+            }
+            editText(cssStyles, myString);
+        
+    </script>
+    <!-- <p style="color:red;text-align:center;text-decoration:underline;"></p> -->
+</body>
+</html>
